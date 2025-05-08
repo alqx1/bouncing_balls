@@ -5,7 +5,12 @@ A simple simulation of balls bouncing in a window, made in OpenGL
 The project is inspired and based on [this](https://www.vobarian.com/collisions/2dcollisions2.pdf) PDF document. Please, check it out, since it's quite interesting.
 
 ## Build
-Build using CMake. Start the commands from the project's root directory.
+Make sure to initalize the project's submodules before building:
+    
+    git submodule init
+    git submodule update
+
+Build using CMake. Execute the commands from inside the project's root directory.
 
     mkdir build && cd build
     cmake -G<generator> ..
