@@ -1,6 +1,9 @@
 # Bouncing Ball Simulation
 A simple simulation of balls bouncing in a window, made in OpenGL
 
+## Inspiration
+The project is inspired and based on [this](https://www.vobarian.com/collisions/2dcollisions2.pdf) PDF document. Please, check it out, since it's quite interesting.
+
 ## Build
 Build using CMake. Start the commands from the project's root directory.
 
