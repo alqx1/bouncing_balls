@@ -34,6 +34,7 @@ class Circle {
 
     static void render(Circle circle, Shader &shader);
     static void initCircleClass(const unsigned int points);
+    static void cleanCircleClass();
 
   private:
     float m_radius;

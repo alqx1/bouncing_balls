@@ -5,7 +5,7 @@
 #define COLS 7
 #define ROWS 6
 
-#define RADIUS 20
+#define RADIUS 50
 
 #include "glad/glad.h"
 #include <GLFW/glfw3.h>
@@ -25,7 +25,7 @@ std::vector<Circle> genCircles();
 int main() {
     srand(time(NULL));
     Window window(W_WIDTH, W_HEIGHT);
-    Circle::initCircleClass(40);
+    Circle::initCircleClass(10);
     Shader shader(
         std::filesystem::absolute("./simple.vert").c_str(),
         std::filesystem::absolute("./simple.frag").c_str()
@@ -59,6 +59,10 @@ int main() {
         glClear(GL_COLOR_BUFFER_BIT);
         window.updateOrthoProjection(shader);
     }
+
+    Circle::cleanCircleClass();
+    shader.remove();
+    window.clean();
 }
 
 std::vector<Circle> genCircles() {

@@ -17,6 +17,10 @@ void Shader::use() {
     glUseProgram(this->id);
 }
 
+void Shader::remove() {
+    glDeleteProgram(this->id);
+}
+
 void Shader::setVec3(const char *name, const glm::vec3 vec) {
     this->use();
     glUniform3f(glGetUniformLocation(this->id, name), vec.r, vec.g, vec.b);

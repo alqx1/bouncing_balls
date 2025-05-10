@@ -12,8 +12,10 @@ class Window {
   public:
     Window(const int width, const int height);
 
-    bool closed();
     void update();
+    void clean();
+
+    bool closed();
     int width();
     int height();
 

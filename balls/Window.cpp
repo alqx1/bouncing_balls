@@ -45,6 +45,10 @@ void Window::update() {
     glfwPollEvents();
 }
 
+void Window::clean() {
+    glfwTerminate();
+}
+
 bool Window::closed() {
     return glfwWindowShouldClose(this->m_window);
 }
