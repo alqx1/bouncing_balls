@@ -188,7 +188,7 @@ void Circle::initCircleClass(const unsigned int points) {
     glBindVertexArray(0);
 }
 
-static void cleanCircleClass() {
+void Circle::cleanCircleClass() {
     glDeleteVertexArrays(1, &Circle::VAO);
     glDeleteBuffers(1, &Circle::VBO);
     glDeleteBuffers(1, &Circle::EBO);
