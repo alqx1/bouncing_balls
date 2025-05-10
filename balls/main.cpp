@@ -25,7 +25,7 @@ std::vector<Circle> genCircles();
 int main() {
     srand(time(NULL));
     Window window(W_WIDTH, W_HEIGHT);
-    Circle::initCircleClass(10);
+    Circle::initCircleClass(40);
     Shader shader(
         std::filesystem::absolute("./simple.vert").c_str(),
         std::filesystem::absolute("./simple.frag").c_str()
